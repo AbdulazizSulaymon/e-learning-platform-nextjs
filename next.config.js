@@ -5,4 +5,5 @@ module.exports = {
   images: {
     domains: ["cdn.pixabay.com", "www.kindpng.com", "media.istockphoto.com"],
   },
+  trailingSlash: true,
 };
