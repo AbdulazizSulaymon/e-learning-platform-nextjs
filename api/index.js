@@ -9,7 +9,7 @@ const getStudents = async () => {
   } catch (error) {
     console.error(error);
     // return [];
-    return { error };
+    return [error];
   }
 };
 
@@ -18,7 +18,7 @@ const getCourse = async (course) => {
     const res = await axios.get(`${baseUrl}/courses/${course}`);
     return res.data;
   } catch (error) {
-    return { error };
+    return [error];
   }
 };
 

@@ -7,6 +7,8 @@ import Layout from "../../components/Layout";
 export default function Home({ data }) {
   const router = useRouter();
 
+  console.log(data);
+
   return (
     <Layout>
       <Typography variant="h6">Course: {data?.title}</Typography>

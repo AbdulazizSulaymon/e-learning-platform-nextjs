@@ -44,6 +44,8 @@ export default function Home({ data }) {
   //   });
   // }, []);
 
+  console.log(data);
+
   return (
     <Layout>
       <Typography variant="h6">Students</Typography>
