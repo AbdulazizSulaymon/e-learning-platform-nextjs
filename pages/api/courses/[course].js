@@ -1,6 +1,12 @@
 import courses from "../../../data/courses";
 
-export default function handler(req, res) {
+import { cors, runMiddleware } from "../../../backend-functions/middlewares";
+
+// Initializing the cors middleware
+
+export default async function handler(req, res) {
+  await runMiddleware(req, res, cors);
+
   const courseName = req.query.course;
 
   const course = courses.find((item) => item.slug == courseName);

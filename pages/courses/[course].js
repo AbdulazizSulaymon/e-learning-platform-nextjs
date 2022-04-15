@@ -7,14 +7,12 @@ import Layout from "../../components/Layout";
 export default function Home({ data }) {
   const router = useRouter();
 
-  console.log(data);
-
   return (
     <Layout>
-      <Typography variant="h6">Course: {data.title}</Typography>
+      <Typography variant="h6">Course: {data?.title}</Typography>
       <img
-        src={data.img}
-        alt={data.title}
+        src={data?.img}
+        alt={data?.title}
         style={{ width: "100%", borderRadius: "14px", margin: "20px 0" }}
       />
     </Layout>

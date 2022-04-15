@@ -61,7 +61,7 @@ export default function Home({ data }) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data.map((row, index) => (
+            {data?.map((row, index) => (
               <StyledTableRow key={row.id}>
                 <StyledTableCell>{index + 1}</StyledTableCell>
                 <StyledTableCell

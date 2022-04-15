@@ -10,6 +10,9 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <title>E-learning platform</title>
+      </Head>
       <CssBaseline />
       <Component {...pageProps} />
     </ThemeProvider>
