@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3000/api";
+const baseUrl = "https://e-learning-platform-nextjs.vercel.app/api";
 
 const getStudents = async () => {
   try {
@@ -8,8 +8,8 @@ const getStudents = async () => {
     return res.data;
   } catch (error) {
     console.error(error);
-    // return [];
-    return { error: JSON.stringify(error) };
+    return [];
+    // return { error: JSON.stringify(error) };
   }
 };
 
@@ -18,7 +18,8 @@ const getCourse = async (course) => {
     const res = await axios.get(`${baseUrl}/courses/${course}`);
     return res.data;
   } catch (error) {
-    return { error: JSON.stringify(error) };
+    return [];
+    // return { error: JSON.stringify(error) };
   }
 };
 
